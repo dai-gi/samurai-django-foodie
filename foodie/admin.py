@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Category, Pref
 # Register your models here.
 
-@adimn.register(Category)
+@admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('category_l', 'name')
     list_display_links = ('category_l',)
