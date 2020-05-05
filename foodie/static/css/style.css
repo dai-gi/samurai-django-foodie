@@ -1,7 +1,7 @@
 
 body {
 	color: #455A64 !important;
-	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", sans-serif !important;
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", sans-serif ;
 	padding-top: 56px;
 	display: flex;
 	flex-flow: column;
@@ -24,7 +24,7 @@ main {
 }
 
 .navbar .navbar-brand {
-	font-family: fantasy;
+	font-family: serif;
 }
 
 #slides {
@@ -33,28 +33,6 @@ main {
 	background-attachment: scroll;
 	position: relative;
 	background-size: cover;
-}
-
-#slides .carousel-inner {
-	background-color: #212529;
-}
-
-#slides .site-heading {
-	padding: 100px 0;
-	text-align: center;
-}
-
-#slides .display-2 {
-	color: white;
-	font-size: 80px;
-	font-family: fantasy;
-}
-
-#slides .display-2:hover {
-	color: white;
-	font-size: 80px;
-	font-family: fantasy;
-	filter: drop-shadow(5px 5px 5px black);
 }
 
 .carousel-inner img {
@@ -67,9 +45,35 @@ main {
     transform: translateY(-50%);
 }
 .carousel-caption h1 {
-    font-size: 500%;
+	font-size: 500%;
+	font-family: serif;
     text-transform: uppercase;
     text-shadow: 1px 1px 10px #000;
+}
+
+.jumbotron {
+	padding: 2rem;
+}
+
+.padding {
+	padding-bottom: 2rem;
+}
+
+.welcome {
+	padding-top: 2rem;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.welcome hr {
+	border-top: 2px solid #b4b4b4;
+	width: 95%;
+	margin-top: .3rem;
+	margin-bottom: 1rem;
+}
+
+.my-4 {
+	margin-top: 100px;
 }
 
 *:focus {
@@ -189,3 +193,33 @@ textarea {
 .page-link {
     color: #28A745 !important;
 }
+
+/*-- Media Queries --*/
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+.carousel-caption {
+	top: 45%;
+}
+.carousel-caption h1 {
+	font-size: 350%;
+}
+.display-4 {
+	font-size: 200%;
+}
+}
+
+@media (max-width: 576px) {
+.carousel-caption {
+	top: 40%;
+}
+.carousel-caption h1 {
+	font-size: 250%;
+}
+.display-4 {
+	font-size: 160%;
+}
+}
+

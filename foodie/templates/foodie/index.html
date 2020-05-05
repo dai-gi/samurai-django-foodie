@@ -24,10 +24,27 @@
         </div>
     </header>
 
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">A web hosting service allows individuals and organizations to make their website accessible via the World Wide Web.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2 ">
+                <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button></a>
+            </div>
+        </div>
+    </div>
+
 {% endblock header %}
 
 {% block content %}
-    <h2 class="mb-4">条件からお店を探す <i class="fas fa-utensils my-icon2"></i></h2>
+    
+    <div class="padding">
+        <div class="welcome text-center">
+            <h2 class="display-4">条件からお店を探す</h2>
+            <hr>
+        </div>
+    </div>
     <div class="p-4 mb-4 bg-light rounded border">
         <form method="GET" action="{% url 'search' %}" name="searchform">
             <h4 class="mb-4">基本条件</h4>
@@ -383,4 +400,6 @@
             </div>
         </form>
     </div>
+
+    <hr class="my-4">
 {% endblock content %}
