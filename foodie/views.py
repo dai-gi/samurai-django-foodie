@@ -311,12 +311,11 @@ def ShopInfo(request, restid):
         "",
         1
     )
-    result =gnavi_api(query)
+    result = gnavi_api(query)
     restaurants_info = get_restaurant_info(result)
 
     if request.method == 'GET':
         params = {
-            'restaurants_info': restaurants_info
+            'restaurants_info': restaurants_info,
         }
-        return render(request, 'foodie/shop_info.html', paramas)
-
+        return render(request, 'foodie/shop_info.html', params)

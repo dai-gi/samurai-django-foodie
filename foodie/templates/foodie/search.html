@@ -376,7 +376,7 @@
                     <p class="card-text mb-1"><i class="fas fa-subway fa-fw my-icon"></i>{{ resutaurant.21 }}・徒歩{{ resutaurant.23 }}分</p>
                     <p class="card-text mb-2"><i class="fas fa-yen-sign fa-fw my-icon"></i>平均{{ resutaurant.33 }}円</p>
                     <p class="card-text mb-auto">{{ resutaurant.26 }}</p>
-                    <a href="{% url 'shop_info' restaurant.0 %}" class="stretched-link"></a>
+                    <a href="{% url 'shop_info' resutaurant.0 %}" class="stretched-link"></a>
                 </div>
             </div>
             {% endfor %}
