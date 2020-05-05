@@ -5,13 +5,14 @@ from .forms import SearchForm
 import json
 import requests
 
+# API に渡すパラメータの値の指定
 GNAVI_URL = "https://api.gnavi.co.jp/RestSearchAPI/v3/"
-GNAVI_KEY = "xxxxx"
+GNAVI_KEY = "096ddd65a3e2463422b85a6f42a754bc"
 
 class IndexView(TemplateView):
     template_name = 'foodie/index.html'
 
-    def get_context_data(self, *args,  **kwargs):
+    def get_context_data(self, *args, **kwargs):
         searchform = SearchForm()
 
         params = {
@@ -128,7 +129,7 @@ def gnavi_api(query):
 
 
 def get_gnavi_data(
-    id,
+        id,
         category_l,
         pref,
         freeword,
