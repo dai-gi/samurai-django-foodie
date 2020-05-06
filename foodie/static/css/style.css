@@ -27,12 +27,43 @@ main {
 	font-family: serif;
 }
 
-#slides {
-	/* background-image: url('/static/image/top.jpg'); */
+.first {
+	background-image: url('/static/image/first.jpg');
+}
+
+.seccond {
+	background-image: url('/static/image/seccond.jpg');
+}
+
+.third {
+	background-image: url('/static/image/third.jpg');
+}
+
+.bg-image-full {
 	background-color: #868e96;
 	background-attachment: scroll;
 	position: relative;
 	background-size: cover;
+}
+
+.bg-image-full .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #212529;
+	opacity: 0.2;
+}
+
+.bg-image-full .site-heading {
+	padding: 100px 0;
+	text-align: center;
+}
+
+.bg-image-full .site-heading h1 {
+	color: white;
+	font-size: 80px;
 }
 
 .carousel-inner img {
