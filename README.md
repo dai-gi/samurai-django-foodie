@@ -1,1 +1,1 @@
-# django-foodie
+# samurai-django-foodie
